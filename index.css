@@ -1,0 +1,241 @@
+:root {
+    --dark: #00070d;
+}
+@font-face {
+    font-family: "Rubik Mono One";
+    src: url(fonts/Rubik_Mono_One/RubikMonoOne-Regular.ttf);
+}
+@font-face {
+    font-family: "Noto Sans Mono";
+    src: url(fonts/Noto_Sans_Mono/NotoSansMono-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "Share Tech Mono";
+    src: url(fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf);
+}
+@font-face {
+    font-family: "Major Mono";
+    src: url(fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf);
+}
+@media print {
+    .roller-div-container {
+        display: none !important;
+    }
+}
+body {
+    background-color: #004042;
+    align-items: flex-start;
+    display: flex;
+}
+.box-div, .roller-div {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    display:inline-block;
+    /*position: absolute;*/
+}
+.main-div .box-div {
+    margin: 10px;
+}
+.h {
+    font-family: "Major Mono";
+}
+.roller-div-container {
+    position: fixed;
+    bottom: 10px;
+    z-index: 10;
+}
+.roller-div {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    height: 100px;
+    width: 200px;
+    font-family: "Share Tech Mono";
+    font-size: 20px;
+    color: slategray;
+    overflow-y: scroll;
+}
+.roller-div div {
+    border-bottom: solid slategray 1px;
+}
+.roller-div div:first-child {
+    color: darkcyan;
+}
+.roller-div div:last-child {
+    border-bottom: 0;
+}
+.dice-div {
+    position: relative;
+    bottom: 15px;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: darkcyan;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    transition: height 0.1s, width 0.1s;
+    font-size: 30px;
+    font-family: "Share Tech Mono";
+    color: white;
+    display: inline-block;
+    z-index: 11;
+    margin: 5px;
+}
+.dice-div-container {
+    position: absolute;
+    bottom: 15px;
+    left: 200px;
+    display: inline-flex;
+}
+h1 {
+    color: white;
+    font-weight: initial;
+}
+
+.roll-button {
+    background-color: #d7feee;
+    color: darkcyan;
+    font-size: 25px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    /*border: solid darkcyan 3px;*/
+    box-shadow: inset 0px 0px 20px white;
+    font-family: "Noto Sans Mono";
+    text-shadow: 0px 0px 5px white;
+    /*border: solid rgba(200, 255, 230, 0.9) 3px;*/
+    text-align: center;
+}
+.roll-button:hover {
+    background-color: aquamarine;
+}
+.box-div .h {
+    color: darkcyan;
+    font-family: "Noto Sans Mono";
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+.roll-div {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+.ability-checks-div .roll-div {
+    margin-right: 10px;
+}
+.skill-checks-div .roll-div {
+    margin-bottom: 10px;
+}
+.ability-checks-div .roll-div:last-child {
+    margin-right: 0;
+}
+.roll-header {
+    display: block;
+    font-family: "Noto Sans Mono";
+    font-weight: bold;
+    color: darkcyan;
+    margin-bottom: 3px;
+}
+.skill-checks-div .roll-header {
+    text-align: left;
+}
+.roll-div .score-span {
+    display: block;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    margin-top: 5px;
+    color: darkcyan;
+    border: solid darkcyan 1px;
+    border-bottom: 0;
+    font-family: "Noto Sans Mono";
+    font-size: 15px;
+}
+.ability-checks-div .roll-div {
+    padding-bottom: 0;
+}
+.skill-checks-div .roll-div {
+    display: block;
+    text-align: right;
+}
+.skill-checks-div .roll-div .roll-header {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    font-size: 12px;
+}
+.skill-checks-div .roll-button {
+    font-size: 15px;
+
+}
+.skill-checks-div .roll-header {
+    float: left;
+}
+.skill-checks-div {
+    right: 5px;
+}
+.main-div {
+    align-items: flex-start;
+    display: flex;
+}
+.roll-button.proficient {
+    background-color: lavender;
+    color: purple;
+}
+.roll-button.proficient:hover {
+    background-color: rgb(193, 193, 255);
+}
+.skill-checks-div .roll-div .subheader-div {
+    text-align: left;
+    color: slategray;
+    font-size: 11px;
+    font-weight: bold;
+}
+.skill-checks-div .roll-div .subheader-div div {
+    display: inline-block;
+    margin-right: 3px;
+}
+.prof-indicator {
+    color: purple;
+}
+.dice-roll-button {
+    background-color: darkcyan;
+    display: inline-block;
+    padding: 5px;
+    font-family: "Share Tech Mono";
+    color: white;
+    cursor: pointer;
+}
+.dice-roll-button:hover {
+    background-color: #00b1b1;
+}
+.dice-flight {
+    top: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    margin-bottom: 5px;
+}
+.proficiency-bonus-div .prof-indicator {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Noto Sans Mono";
+    border-color: purple;
+}
+.initiative-save {
+    display: inline-block;
+    border-color: slategray !important;
+    color: slategray;
+    font-family: "Noto Sans Mono";
+}
+.bordered {
+    border: solid darkcyan 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.info {
+    cursor: help;
+}
+.character-info-div {
+    color: slategray;
+    font-family: "Noto Sans Mono";
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Avon Repus",
+    "race": "Dragonborn",
+    "subrace": "White",
+    "level": 6,
+    "class": "The Warlock",
+    "subclass": "The Fiend",
+    "proficiency_bonus": 3,
+    "initiative_bonus": 0,
+    "ability_scores": {
+        "strength": 11,
+        "dexterity": 12,
+        "constitution": 10,
+        "intelligence": 14,
+        "wisdom": 12,
+        "charisma": 18
+    },
+    "skill_proficiencies": [
+        "arcana",
+        "deception",
+        "investigation",
+        "persuasion",
+        "sleight-of-hand",
+        "stealth"
+    ],
+    "spells": [
+        {"index": "chill-touch"},
+        {"index": "eldritch-blast"},
+        {"index": "message"},
+        {"index": "prestidigitation"},
+        {"index": "spare-the-dying"},
+        {"index": "thaumaturgy"},
+        {"index": "disguise-self"},
+        {"index": "find-familiar"}
+    ]
+}

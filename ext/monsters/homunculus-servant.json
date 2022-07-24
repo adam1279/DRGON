@@ -1,0 +1,92 @@
+{
+    "index": "homunculus-servant",
+    "name": "Homunculus Servant",
+    "size": "Tiny",
+    "type": "construct",
+    "alignment": "neutral",
+    "armor_class": 13,
+    "hit_points": [
+        1,
+        "+",
+        "intelligence_modifier",
+        "+",
+        "level"
+    ],
+    "hit_dice": "level",
+    "speed": {
+        "walk": "20 ft.",
+        "fly": "30 ft."
+    },
+    "strength": 4,
+    "dexterity": 15,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 7,
+    "proficiencies": [],
+    "proficiency_bonus": "proficiency_bonus",
+    "damage_vulnerabilities": [],
+    "damage_resistances": [],
+    "damage_immunities": [
+        "poison"
+    ],
+    "condition_immunities": [
+        {
+            "index": "exhaustion",
+            "name": "Exhaustion",
+            "url": "/api/conditions/exhaustion"
+        },
+        {
+            "index": "poisoned",
+            "name": "Poisoned",
+            "url": "/api/conditions/poisoned"
+        }
+    ],
+    "senses": {
+        "darkvision": "60 ft.",
+        "passive_perception": [
+            10,
+            "+",
+            [
+                "proficiency_bonus",
+                "*",
+                2
+            ]
+
+        ]
+    },
+    "languages": "understands the languages you speak",
+    "challenge_rating": false,
+    "xp": 0,
+    "special_abilities": [
+        {
+            "name": "Evasion",
+            "desc": "If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. It can't use this trait if it's incapacitated."
+        }
+    ],
+    "actions": [
+        {
+            "name": "Force Strike",
+            "desc": "Ranged Weapon Attack: your spell attack modifier to hit, range 30 ft., one target you can see. Hit: 1d4 + PB force damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the target is instead poisoned for 5 (1d10) minutes and unconscious while poisoned in this way.",
+            "attack_bonus": "spell_attack_modifier",
+            "damage": [
+                {
+                    "damage_type": {
+                        "index": "force",
+                        "name": "Force",
+                        "url": "/api/damage-types/force"
+                    },
+                    "damage_dice": "1"
+                }
+            ]
+        }
+    ],
+    "reactions": [
+        {
+            "name": "Channel Magic",
+            "desc": "The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you."
+        }
+    ],
+    "url": "ext/monsters/",
+    "legendary_actions": []
+}

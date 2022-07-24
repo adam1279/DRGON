@@ -1,0 +1,251 @@
+{
+    "name": "Rederick Morgan",
+    "index": "rederick-morgan",
+    "pc": true,
+    "character_info": [
+        {
+            "key": "Nicknames",
+            "value": [
+                "Red Rum",
+                "Red"
+            ]
+        },
+        {
+            "key": "Age",
+            "value": 29
+        }
+    ],
+    "race": {
+        "index": "half-elf",
+        "subrace": false
+    },
+    "classes": [
+        {
+            "index": "artificer",
+            "ext": true,
+            "level": 2,
+            "path": "ext/classes/"
+        }
+    ],
+    "proficiency_bonus": 2,
+    "initiative_bonus": 0,
+    "strength": 8,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 16,
+    "wisdom": 10,
+    "charisma": 16,
+    "proficiencies2": {
+        "skills": [
+            "performance",
+            "stealth",
+            "arcana",
+            "perception",
+            "persuasion",
+            "insight"
+        ],
+        "armor": [
+            "light-armor",
+            "medium-armor",
+            "shields"
+        ],
+        "weapons": [
+            "simple-weapons"
+        ],
+        "saving-throws": [
+            "constitution",
+            "intelligence"
+        ],
+        "tools": [
+            "thieves-tools",
+            "tinkers-tools",
+            "smiths-tools",
+            "jewelers-tools"
+        ]
+    },
+    "proficiencies": [
+        {
+            "proficiency": {
+                "index": "saving-throw-con"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "saving-throw-int"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "skill-performance"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "skill-stealth"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "skill-arcana"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "skill-perception"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "skill-persuasion"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "skill-insight"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "light-armor"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "medium-armor"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "shields"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "simple-weapons"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "thieves-tools"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "tinkers-tools"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "smiths-tools"
+            }
+        },
+        {
+            "proficiency": {
+                "index": "jewelers-tools"
+            }
+        }
+    ],
+    "background": {
+        "index": "guild-artisan",
+        "ext": true,
+        "path": "ext/backgrounds/"
+    },
+    "armor": "scale-mail",
+    "spells": [
+        {
+            "index": "mending"
+        },
+        {
+            "index": "message"
+        },
+        {
+            "index": "false-life"
+        },
+        {
+            "index": "identify"
+        },
+        {
+            "index": "cure-wounds"
+        },
+        {
+            "index": "absorb-elements",
+            "ext": true,
+            "path": "ext/spells/"
+        }
+    ],
+    "infusions": [
+        {
+            "index": "returning-weapon",
+            "ext": true,
+            "path": "ext/infusions/"
+        },
+        {
+            "index": "repeating-shot",
+            "ext": true,
+            "path": "ext/infusions/"
+        },
+        {
+            "index": "armor-of-magical-strength",
+            "ext": true,
+            "path": "ext/infusions/"
+        },
+        {
+            "index": "homunculus-servant",
+            "ext": true,
+            "path": "ext/infusions/"
+        }
+    ],
+    "infusions_known": 4,
+    "infused_items": 2,
+    "speed": 30,
+    "languages": [
+        {
+            "index": "common"
+        },
+        {
+            "index": "elvish"
+        },
+        {
+            "index": "gnomish"
+        },
+        {
+            "index": "dwarvish"
+        }
+    ],
+    "equipment": [
+        {
+            "index": "crossbow-light"
+        },
+        {
+            "index": "crossbow-bolt",
+            "quantity": 20
+        },
+        {
+            "index": "scale-mail",
+            "equipped": true
+        },
+        {
+            "index": "thieves-tools"
+        },
+        {
+            "index": "dungeoneers-pack"
+        },
+        {
+            "index": "tinkers-tools"
+        },
+        {
+            "index": "dagger"
+        },
+        {
+            "index": "amethyst",
+            "ext": true,
+            "name": "Amethyst"
+        },
+        {
+            "index": "bottle-glass",
+            "notes": [
+                "Full of rum"
+            ]
+        }
+    ]
+}
