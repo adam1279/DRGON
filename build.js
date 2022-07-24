@@ -271,3 +271,19 @@ class InfoList extends Element {
 
     }
 }
+
+class NavBar extends Element {
+    constructor(info) {
+        super("div", info, {
+            classes: ["navbar"]
+        });
+        
+    }
+}
+class NavBarItem extends Element {
+    constructor(info) {
+        super("div", info, {
+            classes: ["navbar-item"]
+        });
+    }
+}
